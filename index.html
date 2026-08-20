@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Window Cleaning Delray | Residential & Commercial Window Cleaning, Delray Beach FL</title>
+<meta name="description" content="Window Cleaning Delray serves Delray Beach and Palm Beach County with residential and commercial window cleaning, window tinting and more. Call 561-639-7682.">
+<link rel="canonical" href="https://windowcleaningfl.net/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Window Cleaning Delray - Delray Beach, FL">
+<meta property="og:description" content="Residential and commercial window cleaning and window tinting in Delray Beach and Palm Beach County, FL.">
+<meta property="og:url" content="https://windowcleaningfl.net/">
+<meta property="og:image" content="https://windowcleaningfl.net/wp-content/uploads/2021/07/logo-1-300x287.png">
+<meta property="og:site_name" content="Window Cleaning Delray">
+<meta name="twitter:card" content="summary_large_image">
+
+<style>
+  :root{
+    --navy:#0B2740;
+    --navy-2:#123A5C;
+    --gold:#2E9CD6;
+    --gold-2:#5CC2F2;
+    --paper:#F3F7FA;
+    --steel:#5B7189;
+    --ink:#1B2733;
+    --line:#DCE6ED;
+    --radius:16px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:Calibri, "Segoe UI", Arial, sans-serif;
+    font-weight:400;
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.7;
+  }
+  h1,h2,h3,h4{
+    font-family:Calibri, "Segoe UI", Arial, sans-serif;
+    font-weight:700;
+    color:var(--navy);
+    margin:0 0 .5em 0;
+    line-height:1.25;
+  }
+  p{margin:0 0 1em 0;font-weight:400;}
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px;}
+  section{display:none;}
+  section.active{display:block;}
+
+  /* ---------- Header ---------- */
+  header{
+    position:sticky;top:0;z-index:100;
+    background:rgba(11,39,64,0.97);
+    backdrop-filter:blur(6px);
+    color:#fff;
+  }
+  .headbar{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:14px 24px;max-width:1180px;margin:0 auto;gap:16px;flex-wrap:wrap;
+  }
+  .head-phone{
+    display:flex;align-items:center;gap:8px;
+    font-weight:700;font-size:1.05rem;color:var(--gold-2);
+    white-space:nowrap;
+  }
+  .head-phone svg{flex:none;}
+  nav.mainnav{display:flex;gap:26px;flex-wrap:wrap;}
+  nav.mainnav a{
+    font-weight:400;font-size:.98rem;color:#EAF2F8;
+    padding:6px 2px;border-bottom:2px solid transparent;
+    transition:border-color .2s, color .2s;
+  }
+  nav.mainnav a:hover, nav.mainnav a.current{
+    color:var(--gold-2);border-bottom-color:var(--gold);
+  }
+  .head-brand{display:flex;align-items:center;gap:10px;}
+  .head-brand img{height:40px;width:auto;max-width:150px;border-radius:10px;object-fit:contain;background:#fff;padding:4px;}
+  .head-brand span{font-weight:700;font-size:1rem;color:#fff;line-height:1.2;max-width:170px;}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    background:linear-gradient(135deg, var(--gold-2), var(--gold) 70%);
+    color:#06253d;font-weight:700;
+    padding:11px 20px;border-radius:999px;border:none;cursor:pointer;
+    box-shadow:0 6px 16px rgba(46,156,214,.35);
+    font-size:.95rem;white-space:nowrap;
+  }
+  .btn:hover{filter:brightness(1.05);}
+  .btn-ghost{
+    background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.5);
+    box-shadow:none;
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{
+    background:linear-gradient(160deg, var(--navy) 0%, var(--navy-2) 55%, #0E3252 100%);
+    color:#fff;padding:72px 0 84px;position:relative;overflow:hidden;
+  }
+  .hero::after{
+    content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;
+    border-radius:50%;background:radial-gradient(circle, rgba(92,194,242,.18), transparent 70%);
+  }
+  .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;position:relative;}
+  .eyebrow{
+    display:inline-block;color:var(--gold-2);font-weight:700;letter-spacing:.06em;
+    text-transform:uppercase;font-size:.8rem;margin-bottom:14px;
+  }
+  .hero h1{color:#fff;font-size:2.3rem;max-width:640px;}
+  .hero p.lead{color:#D3E3EE;font-size:1.08rem;max-width:560px;}
+  .hero-ctas{display:flex;gap:14px;margin-top:26px;flex-wrap:wrap;}
+  .hero-stats{display:flex;gap:28px;margin-top:38px;flex-wrap:wrap;}
+  .hero-stats div{min-width:110px;}
+  .hero-stats strong{display:block;font-size:1.5rem;color:var(--gold-2);}
+  .hero-stats span{font-size:.85rem;color:#B6C7D4;}
+  .hero-art{
+    background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);
+    border-radius:var(--radius);padding:8px;box-shadow:0 20px 50px rgba(0,0,0,.35);
+    overflow:hidden;
+  }
+  .hero-art img{
+    border-radius:12px;width:100%;height:340px;object-fit:cover;
+  }
+
+  /* ---------- Sections generic ---------- */
+  .section-pad{padding:68px 0;}
+  .section-head{max-width:680px;margin:0 auto 40px;text-align:center;}
+  .section-head .eyebrow{color:var(--gold);}
+  .section-head h2{font-size:2rem;}
+  .band-alt{background:#fff;}
+
+  /* ---------- Cards ---------- */
+  .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+  .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+  .card{
+    background:#fff;border-radius:var(--radius);padding:26px;
+    box-shadow:0 10px 30px rgba(11,39,64,.07);border:1px solid var(--line);
+  }
+  .card h3{font-size:1.08rem;}
+  .icon-badge{
+    width:52px;height:52px;border-radius:12px;
+    overflow:hidden;margin-bottom:14px;border:1px solid var(--line);
+  }
+  .icon-badge img{width:100%;height:100%;object-fit:cover;}
+
+  /* ---------- Services page ---------- */
+  .svc-filterbar{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:34px;}
+  .svc-filterbar button{
+    border:1.5px solid var(--line);background:#fff;color:var(--navy);
+    padding:8px 16px;border-radius:999px;font-family:inherit;font-size:.88rem;cursor:pointer;
+    font-weight:700;
+  }
+  .svc-filterbar button.active{background:var(--navy);color:#fff;border-color:var(--navy);}
+  .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
+  .svc-card{
+    background:#fff;border-radius:var(--radius);overflow:hidden;
+    box-shadow:0 10px 26px rgba(11,39,64,.08);border:1px solid var(--line);
+    display:flex;flex-direction:column;
+  }
+  .svc-card .svc-img{
+    height:170px;width:100%;
+    position:relative;overflow:hidden;
+  }
+  .svc-card .svc-img img{width:100%;height:100%;object-fit:cover;}
+  .svc-card .svc-img .svc-tag{
+    position:absolute;left:0;bottom:0;right:0;
+    background:linear-gradient(0deg, rgba(11,39,64,.88), rgba(11,39,64,0));
+    color:#fff;font-weight:700;font-size:.88rem;letter-spacing:.02em;
+    padding:24px 14px 10px;
+  }
+  .svc-card .svc-body{padding:20px 22px 24px;flex:1;display:flex;flex-direction:column;}
+  .svc-card h3{font-size:1.02rem;margin-bottom:8px;}
+  .svc-card p{font-size:.92rem;color:#3A4756;flex:1;}
+  .svc-cta{
+    margin-top:12px;display:inline-flex;align-items:center;gap:6px;
+    color:var(--gold);font-weight:700;font-size:.88rem;
+  }
+
+  /* ---------- Floating call button ---------- */
+  .floatcall{
+    position:fixed;bottom:22px;right:22px;z-index:200;
+    background:linear-gradient(135deg, var(--gold-2), var(--gold));
+    color:var(--navy);width:60px;height:60px;border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 10px 26px rgba(46,156,214,.5);
+  }
+  .floatcall:hover{filter:brightness(1.06);}
+
+  /* ---------- Reviews ---------- */
+  .review-card{
+    background:#fff;border-radius:var(--radius);padding:22px;
+    border:1px solid var(--line);box-shadow:0 10px 26px rgba(11,39,64,.06);
+    height:100%;
+  }
+  .review-stars{color:#F5A623;font-size:.95rem;margin-bottom:10px;letter-spacing:2px;}
+  .review-name{font-weight:700;color:var(--navy);font-size:.92rem;margin-top:10px;}
+  .review-date{color:var(--steel);font-size:.8rem;}
+
+  /* ---------- FAQ ---------- */
+  .faq-item{border-bottom:1px solid var(--line);padding:0;}
+  .faq-q{
+    display:flex;align-items:center;justify-content:space-between;gap:14px;
+    width:100%;text-align:left;background:none;border:none;cursor:pointer;
+    padding:18px 4px;font-family:inherit;
+  }
+  .faq-q h4{font-size:1rem;margin:0;color:var(--navy);}
+  .faq-icon{
+    flex:none;width:26px;height:26px;border-radius:50%;
+    border:1.5px solid var(--gold);color:var(--gold);
+    display:flex;align-items:center;justify-content:center;
+    font-size:1.1rem;font-weight:700;line-height:1;
+    transition:transform .25s ease, background .25s ease, color .25s ease;
+  }
+  .faq-item.open .faq-icon{transform:rotate(45deg);background:var(--gold);color:#fff;}
+  .faq-a{
+    max-height:0;overflow:hidden;transition:max-height .3s ease, padding .3s ease;
+  }
+  .faq-a p{margin:0 0 18px;color:#3A4756;padding-right:40px;}
+  .faq-item.open .faq-a{max-height:260px;}
+
+  /* ---------- Contact ---------- */
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;}
+  form.contact-form{background:#fff;border-radius:var(--radius);padding:28px;border:1px solid var(--line);box-shadow:0 10px 30px rgba(11,39,64,.07);}
+  form.contact-form label{display:block;font-weight:700;font-size:.88rem;margin:14px 0 6px;color:var(--navy);}
+  form.contact-form input, form.contact-form select, form.contact-form textarea{
+    width:100%;padding:11px 12px;border-radius:10px;border:1.5px solid var(--line);
+    font-family:inherit;font-size:.95rem;background:#F7FAFC;
+  }
+  form.contact-form button{margin-top:20px;width:100%;justify-content:center;}
+  .contact-info-card{background:var(--navy);color:#fff;border-radius:var(--radius);padding:28px;}
+  .contact-info-card h3{color:#fff;}
+  .contact-line{display:flex;gap:12px;align-items:flex-start;margin-bottom:16px;}
+  .contact-line svg{flex:none;margin-top:2px;}
+  .contact-line a, .contact-line span{color:#D3E3EE;font-size:.95rem;}
+  .map-wrap{margin-top:22px;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);}
+  .map-wrap iframe{width:100%;height:320px;border:0;display:block;}
+
+  /* ---------- About ---------- */
+  .about-hero{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center;}
+  .badge-row{display:flex;gap:18px;flex-wrap:wrap;margin-top:20px;}
+  .badge-row div{
+    background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px 18px;
+    display:flex;align-items:center;gap:10px;font-weight:700;font-size:.9rem;color:var(--navy);
+  }
+
+  /* ---------- Footer ---------- */
+  footer{background:var(--navy);color:#D3E3EE;padding:56px 0 24px;margin-top:20px;}
+  .foot-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1.2fr;gap:34px;}
+  .foot-brand{display:flex;align-items:center;gap:10px;margin-bottom:14px;}
+  .foot-brand img{height:40px;width:auto;max-width:150px;border-radius:10px;object-fit:contain;background:#fff;padding:4px;}
+  .foot-brand span{color:#fff;font-weight:700;}
+  footer h4{color:#fff;font-size:.95rem;margin-bottom:14px;}
+  footer a{color:#B6C7D4;font-size:.9rem;display:block;margin-bottom:9px;}
+  footer a:hover{color:var(--gold-2);}
+  .foot-bottom{
+    border-top:1px solid rgba(255,255,255,.12);margin-top:36px;padding-top:20px;
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.82rem;color:#8FA5B6;
+  }
+
+  /* ---------- Responsive ---------- */
+  @media(max-width:980px){
+    .hero-grid{grid-template-columns:1fr;}
+    .grid-3, .svc-grid{grid-template-columns:repeat(2,1fr);}
+    .contact-grid{grid-template-columns:1fr;}
+    .about-hero{grid-template-columns:1fr;}
+    .foot-grid{grid-template-columns:1fr 1fr;}
+    nav.mainnav{display:none;}
+  }
+  @media(max-width:600px){
+    .grid-3, .svc-grid, .grid-2{grid-template-columns:1fr;}
+    .hero h1{font-size:1.9rem;}
+    .headbar{justify-content:center;text-align:center;}
+    .foot-grid{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="headbar">
+    <a class="head-phone" href="tel:+15616397682" aria-label="Call Window Cleaning Delray">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.3 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8z" stroke="#5CC2F2" stroke-width="1.6" stroke-linejoin="round"/></svg>
+      561-639-7682
+    </a>
+    <nav class="mainnav" id="mainnav">
+      <a href="#home" data-route="home">Home</a>
+      <a href="#about" data-route="about">About</a>
+      <a href="#services" data-route="services">Services</a>
+      <a href="#reviews" data-route="reviews">Reviews</a>
+      <a href="#contact" data-route="contact">Contact</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:14px;">
+      <div class="head-brand">
+        <img src="https://windowcleaningfl.net/wp-content/uploads/2021/07/logo-1-300x287.png" alt="Window Cleaning Delray logo">
+        <span>Window Cleaning Delray</span>
+      </div>
+      <a href="#contact" class="btn">Get a Free Quote</a>
+    </div>
+  </div>
+</header>
+
+<!-- ================= HOME ================= -->
+<section id="home">
+  <div class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Delray Beach, FL &bull; Serving Palm Beach County</span>
+        <h1>Window Cleaning Near Me for Homes &amp; Businesses in Delray Beach</h1>
+        <p class="lead">Window Cleaning Delray provides streak-free residential and commercial window cleaning throughout Delray Beach and Palm Beach County. From house window cleaning to window tinting, our team handles every job with careful equipment, fully insured technicians and honest pricing.</p>
+        <div class="hero-ctas">
+          <a href="tel:+15616397682" class="btn">Call 561-639-7682</a>
+          <a href="#services" class="btn btn-ghost">View Services</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>Free</strong><span>Estimates</span></div>
+          <div><strong>Insured</strong><span>Fully licensed crew</span></div>
+          <div><strong>Res &amp; Comm</strong><span>Homes &amp; businesses</span></div>
+        </div>
+      </div>
+      <div class="hero-art">
+        <img src="https://windowcleaningfl.net/wp-content/uploads/2025/07/residential-commercial-cleaning.jpg" alt="Residential and commercial window cleaning">
+      </div>
+    </div>
+  </div>
+
+  <div class="section-pad wrap">
+    <div class="section-head">
+      <span class="eyebrow">Why Delray Beach Trusts Us</span>
+      <h2>A Local Window Cleaning Company Built Around Clear Glass and Fair Pricing</h2>
+      <p>When homeowners and business owners search for window cleaning near me or the best window cleaning near me, they want a crew that cleans thoroughly, protects the property and stands behind the work. That is exactly what Window Cleaning Delray delivers, whether the job is a single storefront or a full residential exterior.</p>
+    </div>
+    <div class="grid-3">
+      <div class="card">
+        <div class="imges"><img src="https://windowcleaningfl.net/wp-content/uploads/2021/07/i1.jpg" alt="Affordable window cleaning icon"></div>
+        <h3>Affordable Window Cleaning</h3>
+        <p>Free, no-obligation estimates and straightforward pricing, so you know the full cost before any cleaning begins.</p>
+      </div>
+      <div class="card">
+        <div class="imges"><img src="https://windowcleaningfl.net/wp-content/uploads/2021/07/i3.jpg" alt="Professional window cleaning icon"></div>
+        <h3>Trained, Professional Crews</h3>
+        <p>Technicians with years of hands-on experience cleaning residential and commercial windows across Florida.</p>
+      </div>
+      <div class="card">
+        <div class="imges"><img src="https://windowcleaningfl.net/wp-content/uploads/2021/07/i2.jpg" alt="Safety and insured icon"></div>
+        <h3>Fully Licensed &amp; Insured</h3>
+        <p>We carry full insurance and follow safe working practices on every residential and commercial job.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-pad band-alt">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">What We Handle</span>
+        <h2>Residential, Commercial &amp; Window Tinting Services</h2>
+      </div>
+      <div class="grid-3">
+        <div class="card">
+          <h3>Residential Window Cleaning</h3>
+          <p>House window cleaning that leaves glass, screens and tracks spotless, inside and out.</p>
+        </div>
+        <div class="card">
+          <h3>Commercial Window Cleaning</h3>
+          <p>Storefronts, offices and multi-story buildings cleaned safely across Palm Beach County.</p>
+        </div>
+        <div class="card">
+          <h3>Window Tinting Delray FL</h3>
+          <p>Solar, privacy and safety window film to reduce heat, glare and UV exposure year-round.</p>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:30px;">
+        <a href="#services" class="btn">See All Services</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-pad wrap">
+    <div class="section-head">
+      <span class="eyebrow">Our Story</span>
+      <h2>Serving Delray Beach &amp; Palm Beach County, Florida</h2>
+    </div>
+    <div class="grid-2">
+      <div>
+        <p>Welcome to Window Cleaning Delray, a window cleaning and window tinting company based in Delray Beach, FL. Your home or business deserves streak-free, sparkling windows, and that is what our technicians are trained to deliver on every job.</p>
+        <p>Whether you are a homeowner dealing with salt-air haze, a business owner maintaining a storefront, or a property manager needing window cleaning for multiple units, our team works carefully and cleans each window thoroughly.</p>
+      </div>
+      <div>
+        <p>As a resident of Palm Beach County, you should not have to worry about hazy, streaked or sun-damaged windows. Our team takes pride in careful preparation, thorough cleaning and clear communication from the first call through the final walkthrough.</p>
+        <p>We proudly serve Delray Beach and the rest of Palm Beach County, Florida, providing free estimates and answering every question about window cleaning and window tinting along the way.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-pad band-alt">
+    <div class="wrap" style="text-align:center;">
+      <h2>Ready for Streak-Free, Sparkling Windows?</h2>
+      <p style="max-width:560px;margin:0 auto 20px;">Our team provides free estimates for residential and commercial window cleaning throughout Delray Beach and Palm Beach County, FL.</p>
+      <a href="tel:+15616397682" class="btn">Call 561-639-7682 Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+  <div class="section-pad wrap">
+    <div class="about-hero">
+      <div>
+        <span class="eyebrow">About Window Cleaning Delray</span>
+        <h1>Window Cleaning Built on Thorough Work and Honest Pricing</h1>
+        <p>Window Cleaning Delray is built on one simple idea: when someone is ready to clean their windows or protect them with film, they deserve a crew who inspects carefully, explains the options clearly and cleans thoroughly, on schedule and at a fair price. That idea guides every residential window cleaning, commercial window cleaning and window tinting job we complete.</p>
+        <p>Our technicians handle residential and commercial work, including full-home exterior cleaning, single storefront windows and multi-story commercial buildings. We are equally comfortable cleaning one window or servicing an entire office complex.</p>
+        <div class="badge-row">
+          <div>Free Estimates</div>
+          <div>Residential &amp; Commercial</div>
+          <div>Delray Beach, Palm Beach County FL</div>
+        </div>
+      </div>
+      <div class="hero-art" style="box-shadow:0 20px 50px rgba(11,39,64,.12);border-color:var(--line);background:#fff;">
+        <img src="https://windowcleaningfl.net/wp-content/uploads/2021/07/ss1.jpg" alt="Window film and glass protection work" style="height:360px;">
+      </div>
+    </div>
+  </div>
+
+  <div class="section-pad band-alt">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Our Commitment</span>
+        <h2>What Makes Us the Window Cleaner Delray Calls</h2>
+      </div>
+      <div class="grid-3">
+        <div class="card"><h3>Experience</h3><p>Years of hands-on window cleaning experience across every glass type and property in Palm Beach County, FL.</p></div>
+        <div class="card"><h3>Commitment</h3><p>We are committed to a thorough, streak-free cleaning on every window job, large or small.</p></div>
+        <div class="card"><h3>Quality</h3><p>Our technicians are skilled and reliable, treating every home and office like it is our own property.</p></div>
+        <div class="card"><h3>Service</h3><p>Available throughout the entire process, from the first call to the final walkthrough.</p></div>
+        <div class="card"><h3>Professionalism</h3><p>Punctual crews who explain the work clearly before any cleaning begins.</p></div>
+        <div class="card"><h3>Fair Pricing</h3><p>Free estimates with no surprise fees added after the job is quoted.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-pad wrap">
+    <div class="section-head">
+      <span class="eyebrow">Common Questions</span>
+      <h2>Frequently Asked Questions</h2>
+    </div>
+   <div style="max-width:760px;margin:0 auto;" id="faqList">
+      <div class="faq-item">
+        <button class="faq-q" type="button">
+          <h4>Do you offer free estimates for window cleaning?</h4>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><p>Yes. We provide free estimates for residential and commercial window cleaning throughout Delray Beach and Palm Beach County, FL, with no obligation.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" type="button">
+          <h4>How often should windows be cleaned?</h4>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><p>Most homes benefit from window cleaning two to four times a year, while businesses near the coast or high-traffic areas often schedule monthly or bi-monthly visits.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" type="button">
+          <h4>Do you clean windows for offices and businesses?</h4>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><p>Yes. We handle commercial window cleaning for storefronts, offices and multi-unit buildings across Palm Beach County.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" type="button">
+          <h4>What areas do you serve outside Delray Beach?</h4>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><p>We serve Delray Beach and the surrounding communities throughout Palm Beach County, Florida.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" type="button">
+          <h4>Do you offer window tinting as well as cleaning?</h4>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><p>Yes. Alongside cleaning, we offer window tinting in Delray Beach FL, including solar, privacy and safety film for homes and businesses.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section id="services">
+  <div class="section-pad wrap">
+    <div class="section-head">
+      <span class="eyebrow">Full Service List</span>
+      <h1>Window Cleaning &amp; Window Tinting Services in Delray Beach, FL</h1>
+      <p>Search results for window cleaning near me and affordable window cleaning near me lead many local homeowners and businesses to Window Cleaning Delray. Below is our complete range of residential, commercial and window tinting services.</p>
+    </div>
+    <div class="svc-filterbar" id="svcFilters">
+      <button data-filter="all" class="active">All</button>
+      <button data-filter="residential">Residential</button>
+      <button data-filter="commercial">Commercial</button>
+      <button data-filter="tinting">Window Tinting</button>
+      <button data-filter="general">General</button>
+    </div>
+    <div class="svc-grid" id="svcGrid"></div>
+  </div>
+</section>
+
+<!-- ================= REVIEWS ================= -->
+<section id="reviews">
+  <div class="section-pad wrap">
+    <div class="section-head">
+      <span class="eyebrow">What Customers Say</span>
+      <h1>Reviews From Delray Beach &amp; Palm Beach County</h1>
+      <p>Homeowners and businesses across Palm Beach County trust us for reliable, affordable and streak-free window cleaning. Here is some of what they have shared.</p>
+    </div>
+    <div class="grid-3" id="reviewGrid"></div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact">
+  <div class="section-pad wrap">
+    <div class="section-head">
+      <span class="eyebrow">Get In Touch</span>
+      <h1>Contact Window Cleaning Delray</h1>
+      <p>Whether you need a full residential window cleaning or a single storefront serviced, our team is ready to schedule your free estimate. Call or send the form below and we will confirm a time that works for you.</p>
+    </div>
+    <div class="contact-grid">
+      <div>
+        <p>Window Cleaning Delray serves homeowners and businesses across Delray Beach and Palm Beach County, FL. When you reach out, tell us about your project, whether it is window cleaning, window tinting, or both, and we will give you a clear estimate before any work begins.</p>
+        <p>For residential jobs, let us know the size of your home and any specific concerns so we can quote accurately. Commercial customers requesting office or storefront window cleaning can also ask about scheduling around business hours to minimize disruption.</p>
+        <p>We are proud to serve Delray Beach and the surrounding Palm Beach County communities. Reach out any time during business hours and our team will help you find the right window cleaning solution.</p>
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('Thank you. Our team will contact you shortly.');">
+          <label for="cf-name">Full Name</label>
+          <input id="cf-name" type="text" required placeholder="Your name">
+          <label for="cf-phone">Phone Number</label>
+          <input id="cf-phone" type="tel" required placeholder="(561) 000-0000">
+          <label for="cf-service">Service Needed</label>
+          <select id="cf-service">
+            <option>Window Cleaning</option>
+            <option>Residential Window Cleaning</option>
+            <option>Commercial Window Cleaning</option>
+            <option>Window Cleaning Service</option>
+            <option>Window Tinting Delray FL</option>
+            <option>House Window Cleaning</option>
+            <option>Other</option>
+          </select>
+          <label for="cf-msg">Message</label>
+          <textarea id="cf-msg" rows="4" placeholder="Tell us about your project"></textarea>
+          <button type="submit" class="btn">Request Free Estimate</button>
+        </form>
+      </div>
+      <div>
+        <div class="contact-info-card">
+          <h3>Contact Details</h3>
+          <div class="contact-line">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.3 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8z" stroke="#5CC2F2" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            <a href="tel:+15616397682">561-639-7682</a>
+          </div>
+          <div class="contact-line">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="#5CC2F2" stroke-width="1.6"/><path d="M3 7l9 6 9-6" stroke="#5CC2F2" stroke-width="1.6"/></svg>
+            <a href="https://windowcleaningfl.net">windowcleaningfl.net</a>
+          </div>
+          <div class="contact-line">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 22s7-6.2 7-12A7 7 0 105 10c0 5.8 7 12 7 12z" stroke="#5CC2F2" stroke-width="1.6"/><circle cx="12" cy="10" r="2.4" stroke="#5CC2F2" stroke-width="1.6"/></svg>
+            <span>842 E Atlantic Ave #537, Delray Beach, FL 33483</span>
+          </div>
+          <div class="contact-line">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#5CC2F2" stroke-width="1.6"/><path d="M12 7v5l3 2" stroke="#5CC2F2" stroke-width="1.6" stroke-linecap="round"/></svg>
+            <span>Mon–Fri 9am–9pm, Sat 11am–10pm</span>
+          </div>
+          <div class="contact-line">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="18" height="12" rx="2" stroke="#5CC2F2" stroke-width="1.6"/><path d="M3 10h18" stroke="#5CC2F2" stroke-width="1.6"/></svg>
+            <span>Cash &amp; All Major Credit Cards Accepted</span>
+          </div>
+          <div class="contact-line">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="2" stroke="#5CC2F2" stroke-width="1.6"/><path d="M12 4v16M4 12h16" stroke="#5CC2F2" stroke-width="1.6"/></svg>
+            <span>Delray Beach, Palm Beach County, Florida</span>
+          </div>
+        </div>
+        <div class="map-wrap">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2474.2299841145123!2d-80.064522!3d26.461506999999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d8df232b718427%3A0xc3f7be63c3147696!2sDelray!5e1!3m2!1sen!2s!4v1787237129667!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<a href="tel:+15616397682" class="floatcall" aria-label="Call Window Cleaning Delray now">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.3 1.2.4 2.5.6 3.8.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.6.6 3.8.1.4 0 .8-.3 1.1L6.6 10.8z" fill="#0B2740"/></svg>
+</a>
+
+<footer>
+  <div class="wrap foot-grid">
+    <div>
+      <div class="foot-brand">
+        <img src="https://windowcleaningfl.net/wp-content/uploads/2021/07/logobot-300x287.png" alt="Window Cleaning Delray logo">
+        <span>Window Cleaning Delray</span>
+      </div>
+      <p style="font-size:.9rem;">A window cleaning and window tinting company serving Delray Beach and Palm Beach County, FL with residential, commercial and window film services.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#services">Services</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div>
+      <h4>Popular Services</h4>
+      <a href="#services">Window Cleaning</a>
+      <a href="#services">Residential Window Cleaning</a>
+      <a href="#services">Commercial Window Cleaning</a>
+      <a href="#services">Window Tinting Delray FL</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <a href="tel:+15616397682">561-639-7682</a>
+      <a href="https://windowcleaningfl.net">windowcleaningfl.net</a>
+      <a href="#contact">842 E Atlantic Ave #537, Delray Beach, FL 33483</a>
+      <a href="#contact">Mon–Fri 9am–9pm, Sat 11am–10pm</a>
+    </div>
+  </div>
+  <div class="wrap foot-bottom">
+    <span>&copy; 2026 Window Cleaning Delray. All rights reserved.</span>
+    <span>Window Cleaning Near Me in Delray Beach &amp; Palm Beach County, FL</span>
+  </div>
+</footer>
+
+<script>
+/* ---------------- Routing ---------------- */
+const routes = ["home","about","services","reviews","contact"];
+function showRoute(r){
+  if(!routes.includes(r)) r = "home";
+  routes.forEach(id=>{
+    document.getElementById(id).classList.toggle("active", id===r);
+  });
+  document.querySelectorAll("nav.mainnav a").forEach(a=>{
+    a.classList.toggle("current", a.dataset.route===r);
+  });
+  window.scrollTo({top:0,behavior:"instant"});
+}
+window.addEventListener("hashchange", ()=> showRoute(location.hash.replace("#","")));
+showRoute(location.hash.replace("#","") || "home");
+
+/* ---------------- FAQ accordion ---------------- */
+document.querySelectorAll("#faqList .faq-item").forEach(item=>{
+  item.querySelector(".faq-q").addEventListener("click", ()=>{
+    const wasOpen = item.classList.contains("open");
+    document.querySelectorAll("#faqList .faq-item").forEach(i=>i.classList.remove("open"));
+    if(!wasOpen) item.classList.add("open");
+  });
+});
+
+/* ---------------- Services data ---------------- */
+const IMG = {
+  slide1: "https://windowcleaningfl.net/wp-content/uploads/2021/07/asdasd.jpg",
+  slide2: "https://windowcleaningfl.net/wp-content/uploads/2021/07/slide11.jpg",
+  tint: "https://windowcleaningfl.net/wp-content/uploads/2021/07/ff2.jpg",
+  rescom: "https://windowcleaningfl.net/wp-content/uploads/2025/07/residential-commercial-cleaning.jpg",
+  film1: "https://windowcleaningfl.net/wp-content/uploads/2021/07/ss1.jpg",
+  film2: "https://windowcleaningfl.net/wp-content/uploads/2021/07/sss.jpg",
+  stone: "https://windowcleaningfl.net/wp-content/uploads/2025/09/stone-film-2.jpg"
+};
+
+const services = [
+  {name:"Window Cleaning", cat:"general", img:IMG.rescom,
+   desc:"Our window cleaning service removes dust, grime and salt-air residue from every reachable pane, inside and out. We inspect the glass, clean each window thoroughly and check the frames and sills before we consider the job finished, leaving your view clear and streak-free."},
+  {name:"Window Cleaning Service", cat:"general", img:IMG.slide1,
+   desc:"Our window cleaning service is built around clear communication from the first call to the final walkthrough. We inspect every window on site, explain what we find honestly, and schedule the cleaning at a time that works for your household or business, with cleanup included once the job is done."},
+  {name:"Best Window Cleaning Service", cat:"general", img:IMG.slide2,
+   desc:"Homeowners searching for the best window cleaning service want a crew that cleans thoroughly and explains the process clearly. Our technicians use professional tools and solutions to remove dirt, hard water spots and film from every window, and we stand behind the quality of every job we complete."},
+  {name:"Residential Window Cleaning", cat:"residential", img:IMG.rescom,
+   desc:"Residential window cleaning helps homeowners throughout Delray Beach breathe easier and see clearer, especially in homes near the coast where salt spray builds up quickly. We clean interior and exterior panes, screens and tracks room by room, or handle the whole house in one scheduled visit."},
+  {name:"House Window Cleaning", cat:"residential", img:IMG.slide1,
+   desc:"House window cleaning covers everything from single-story homes to multi-level properties, with careful attention to screens, tracks and hard-to-reach panes. We schedule around your routine and leave every window streak-free and spotless when we are finished."},
+  {name:"Affordable Window Cleaning", cat:"residential", img:IMG.film1,
+   desc:"Affordable window cleaning does not mean cutting corners. We offer free estimates and fair, transparent pricing so homeowners across Palm Beach County can keep their windows spotless without surprise fees added after the job is quoted."},
+  {name:"Commercial Window Cleaning", cat:"commercial", img:IMG.slide2,
+   desc:"Commercial window cleaning keeps storefronts, offices and multi-unit buildings looking their best and improves natural light for employees and customers. Our crews work around business hours whenever possible to minimize disruption while cleaning every reachable pane."},
+  {name:"Best Windows Cleaning Delray", cat:"commercial", img:IMG.rescom,
+   desc:"Businesses across Delray Beach choose us for reliable, professional window cleaning that keeps their storefront or office looking sharp. We coordinate scheduling with property management and clean thoroughly on every visit."},
+  {name:"Window Tinting Delray FL", cat:"tinting", img:IMG.tint,
+   desc:"Window tinting reduces heat, glare and UV exposure while adding privacy to your home or business. We install solar, privacy and safety window film with precision, helping lower cooling costs and protect interiors from sun damage."},
+  {name:"Window Film Installation", cat:"tinting", img:IMG.film2,
+   desc:"Our window film installation service covers solar film, safety film and privacy tinting for both residential and commercial properties. Each installation is measured and applied carefully for a clean, bubble-free finish."},
+  {name:"Privacy Window Tinting", cat:"tinting", img:IMG.stone,
+   desc:"Privacy window tinting keeps prying eyes out while still letting natural light in, ideal for ground-floor homes, offices and storefronts throughout Palm Beach County."},
+  {name:"Window Cleaning Near Me", cat:"general", img:IMG.slide2,
+   desc:"When you search for window cleaning near me, you want a local, insured crew that shows up on time and leaves your windows spotless. Window Cleaning Delray serves Delray Beach and the surrounding Palm Beach County communities with exactly that."}
+];
+
+const svcGrid = document.getElementById("svcGrid");
+function renderServices(filter){
+  svcGrid.innerHTML = "";
+  services
+    .filter(s => filter==="all" || s.cat===filter)
+    .forEach(s=>{
+      const card = document.createElement("div");
+      card.className = "svc-card";
+      card.innerHTML = `
+        <div class="svc-img">
+          <img src="${s.img}" alt="${s.name} in Delray Beach FL" loading="lazy">
+          <div class="svc-tag">${s.name}</div>
+        </div>
+        <div class="svc-body">
+          <h3>${s.name}</h3>
+          <p>${s.desc}</p>
+          <a href="tel:+15616397682" class="svc-cta">Call for ${s.name} &rarr;</a>
+        </div>`;
+      svcGrid.appendChild(card);
+    });
+}
+renderServices("all");
+document.getElementById("svcFilters").addEventListener("click", e=>{
+  if(e.target.tagName !== "BUTTON") return;
+  document.querySelectorAll("#svcFilters button").forEach(b=>b.classList.remove("active"));
+  e.target.classList.add("active");
+  renderServices(e.target.dataset.filter);
+});
+
+/* ---------------- Reviews data ---------------- */
+const reviews = [
+  {name:"Mosley Larissa", date:"2020-03-10", text:"If you are looking for a residential cleaning company in the area, this has got to be the one to contact. My neighbor referred them to me, and I am really happy with the price and quality of the work."},
+  {name:"Paredes Magdalena", date:"2020-03-03", text:"The best window cleaning services I have ever used. Our windows, screens and doors are simply spotless every time they finish the job. Professional and thorough every visit."},
+  {name:"Tregre Silverberg", date:"2019-11-13", text:"Thank you so much. I am thoroughly pleased with the reliable window cleaning, from the reasonable rates to the quality of the service. I will definitely call again in the future."},
+  {name:"Dube Bova", date:"2018-11-15", text:"I found this company a long time ago and never stopped using their services since then. They always arrive on time and do their job quickly, and are more affordable than most in the area."},
+  {name:"Karl Freundt", date:"2018-11-08", text:"I love their commercial window cleaning services. My office windows look invisible after they are done. Very responsive and professional on the phone, with reasonable pricing."},
+  {name:"Vanessa Panos", date:"2018-11-01", text:"Absolutely wonderful job on my windows. They are reasonably priced and responsible, and took their time making my windows completely see-through. Highly recommend."}
+];
+const reviewGrid = document.getElementById("reviewGrid");
+reviews.forEach(r=>{
+  const card = document.createElement("div");
+  card.className = "review-card";
+  card.innerHTML = `
+    <div class="review-stars">★★★★★</div>
+    <p style="font-size:.94rem;color:#3A4756;">${r.text}</p>
+    <div class="review-name">${r.name}</div>
+    <div class="review-date">${r.date} &bull; Verified</div>`;
+  reviewGrid.appendChild(card);
+});
+</script>
+
+<!-- ============= JSON-LD SCHEMA ============= -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Window Cleaning Delray",
+  "image": "https://windowcleaningfl.net/wp-content/uploads/2021/07/logo-1-300x287.png",
+  "telephone": "+1-561-639-7682",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "842 E Atlantic Ave #537",
+    "addressLocality": "Delray Beach",
+    "addressRegion": "FL",
+    "postalCode": "33483",
+    "addressCountry": "US"
+  },
+  "url": "https://windowcleaningfl.net/",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "09:00",
+      "closes": "21:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Saturday"],
+      "opens": "11:00",
+      "closes": "22:00"
+    }
+  ],
+  "paymentAccepted": "Cash, Credit Card"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {"@type":"Service","serviceType":"Window Cleaning","provider":{"@type":"LocalBusiness","name":"Window Cleaning Delray"},"areaServed":"Palm Beach County, FL"},
+    {"@type":"Service","serviceType":"Residential Window Cleaning","provider":{"@type":"LocalBusiness","name":"Window Cleaning Delray"},"areaServed":"Palm Beach County, FL"},
+    {"@type":"Service","serviceType":"Commercial Window Cleaning","provider":{"@type":"LocalBusiness","name":"Window Cleaning Delray"},"areaServed":"Palm Beach County, FL"},
+    {"@type":"Service","serviceType":"Window Tinting","provider":{"@type":"LocalBusiness","name":"Window Cleaning Delray"},"areaServed":"Palm Beach County, FL"}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you offer free estimates for window cleaning?",
+      "acceptedAnswer": {"@type":"Answer","text":"Yes. We provide free estimates for residential and commercial window cleaning throughout Delray Beach and Palm Beach County, FL, with no obligation."}
+    },
+    {
+      "@type": "Question",
+      "name": "How often should windows be cleaned?",
+      "acceptedAnswer": {"@type":"Answer","text":"Most homes benefit from window cleaning two to four times a year, while businesses near the coast or high-traffic areas often schedule monthly or bi-monthly visits."}
+    },
+    {
+      "@type": "Question",
+      "name": "Do you clean windows for offices and businesses?",
+      "acceptedAnswer": {"@type":"Answer","text":"Yes. We handle commercial window cleaning for storefronts, offices and multi-unit buildings across Palm Beach County."}
+    },
+    {
+      "@type": "Question",
+      "name": "What areas do you serve outside Delray Beach?",
+      "acceptedAnswer": {"@type":"Answer","text":"We serve Delray Beach and the surrounding communities throughout Palm Beach County, Florida."}
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer window tinting as well as cleaning?",
+      "acceptedAnswer": {"@type":"Answer","text":"Yes. Alongside cleaning, we offer window tinting in Delray Beach FL, including solar, privacy and safety film for homes and businesses."}
+    }
+  ]
+}
+</script>
+
+</body>
+</html>
